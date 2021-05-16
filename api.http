@@ -1,0 +1,8 @@
+GET http://127.0.0.1:8000/api/products?apiKey=1234
+
+###
+
+GET http://127.0.0.1:8000/api/products?apiKey=123445
+
+###
+GET http://127.0.0.1:8000/api/products?apiKey=1234
