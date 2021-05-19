@@ -1,17 +1,25 @@
 
 
-const path = require('path');
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 8000;
-const userRouters = require('./routes/userRouters.js');
-const productRouters = require('./routes/productRouters.js');
+        const path           = require('path');
+        const express        = require('express');
+        const app            = express();
+        const PORT           = process.env.PORT || 8000;
+        const userRouters    = require('./routes/userRouters.js');
+        const productRouters = require('./routes/productRouters.js');
+        const { text } = require('express');
+        const { createConnection } = require('net');
 
-app.set('view engine','ejs');
-app.use(userRouters);
-app.use(productRouters);
+        app.set('view engine','ejs');
+        app.use(userRouters);
+        app.use(productRouters);
 
 
-app.listen(PORT,()=>{
-    console.log(`Listening the port on ${PORT}`);
-});
+        app.listen(PORT,()=>{
+            console.log(`Listening the port on ${PORT}`);
+        });
+
+        
+        
+        
+        
+        
